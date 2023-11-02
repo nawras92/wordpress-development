@@ -1,0 +1,205 @@
+/*grid listing*/
+.top-overlay {
+  margin-top: -150px;
+}
+.grid-listing {
+  font-size: 0;
+  line-height: 0px;
+}
+.grid-item {
+  width: 300px;
+  max-width: 100%;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+@media (min-width: 992px) {
+  .grid-item {
+    width: 25%;
+  }
+  .has-featured-item .grid-item:first-child {
+    width: 50%;
+  }
+  .has-featured-item .grid-item:first-child .grid-item-inner {
+    padding-top: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .grid-item {
+    width: 100%;
+  }
+  .has-featured-item .featured-item-1 .app-thumbnail img {
+    width: 200%;
+    max-width: 200% !important;
+    margin-left: -50%;
+  }
+}
+.grid-item-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-header .grid-item-content {
+  padding: 30px;
+}
+.grid-header h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 13px;
+}
+.grid-header p {
+  margin-bottom: 26px;
+}
+.grid-item .app-item {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+}
+.app-thumbnail {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.app-thumbnail img {
+  width: 100%;
+  height: auto;
+  transition: all 0.4s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+}
+.date-block {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 15px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  min-width: 66px;
+}
+.date-block:not(.main-color-2-bg) {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.75);
+}
+.date-block .day {
+  font-size: 20px;
+  text-align: center;
+}
+.date-block .month {
+  text-transform: uppercase;
+  text-align: center;
+}
+.grid-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(34, 34, 34, 0.8);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+}
+.overlay-top {
+  display: block;
+  padding: 12px 28px 15px 20px;
+  position: relative;
+}
+.overlay-top h4 {
+  margin-bottom: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-bottom: 12px;
+  position: relative;
+  font-family: 'Oswald', Times, serif;
+  color: #fff;
+}
+.overlay-top h4:before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  height: 3px;
+  width: 40px;
+  max-width: 90%;
+  background-color: #eee;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+.overlay-top h4 a {
+  color: #fff;
+}
+.grip-app-icon {
+  width: 60px;
+  margin-right: 15px;
+  margin-top: -25px;
+  float: left;
+}
+.grid-has-icon .overlay-top:after {
+  display: none;
+}
+.overlay-bottom .price {
+  font-size: 14px;
+}
+.yellow {
+  color: #fcff00;
+}
+.overlay-bottom,
+.no-overlay-bottom .app-item:hover .overlay-bottom {
+  height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  transition: all 0.25s ease-out 0.1s;
+}
+.overlay-bottom > * {
+  opacity: 0;
+  transform: translateX(25px);
+  -webkit-transform: translateX(25px);
+  transition: all 0.25s ease-out 0.4s;
+}
+.app-item:hover .app-thumbnail img {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+  -moz-filter: brightness(90%);
+  -ms-filter: brightness(90%);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+body.mobile .app-item:hover .app-thumbnail img {
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -webkit-transform: none;
+  transform: none;
+}
+.app-item:hover .overlay-bottom {
+  height: 50px;
+  padding: 2px 20px 18px;
+  transition: all 0.25s ease-out;
+}
+.app-item:hover .overlay-bottom > * {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  transition: all 0.25s ease-out 0.2s;
+}
+.overlay-bottom div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
