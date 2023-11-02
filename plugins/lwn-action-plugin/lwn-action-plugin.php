@@ -13,8 +13,13 @@
 define('LWN_ACTION_PLUGIN', plugin_dir_path(__FILE__));
 
 // Include a new file
+<<<<<<< HEAD
 /* require_once LWN_ACTION_PLUGIN . 'new-file.php'; */
 /* require_once LWN_ACTION_PLUGIN . 'new-file-2.php'; */
+=======
+require_once LWN_ACTION_PLUGIN . 'new-file.php';
+require_once LWN_ACTION_PLUGIN . 'new-file-2.php';
+>>>>>>> 7d17fd7d099f9ecac2c10fe6c8b3e050dc4d7626
 
 add_action('wp_footer', 'lwn_action_plugin_say_hello_in_footer_callback');
 function lwn_action_plugin_say_hello_in_footer_callback()
