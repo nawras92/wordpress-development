@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/lwn-first-block",
+	"version": "0.1.0",
+	"title": "Lwn First Block",
+	"category": "widgets",
+	"icon": "database",
+	"description": "Just a simple block",
+	"attributes": {
+		"userText": {
+			"type": "string",
+			"default": "Hello from my block"
+		}
+	},
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"color": true,
+			"link": true
+		}
+	},
+	"textdomain": "lwn-first-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
