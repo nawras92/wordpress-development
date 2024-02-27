@@ -11,6 +11,14 @@
     "userText": {
       "type": "string",
       "default": "Hello from my block"
+    },
+    "headingColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "headingBackground": {
+      "type": "string",
+      "default": "#333"
     }
   },
   "example": {},

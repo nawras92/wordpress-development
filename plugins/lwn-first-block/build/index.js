@@ -29,6 +29,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 function Edit(props) {
   const {
     attributes,
@@ -46,9 +49,33 @@ function Edit(props) {
     onChange: newValue => setAttributes({
       userText: newValue
     })
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+    title: "color attributes",
+    initialOpen: true
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.PanelColorSettings, {
+    title: "Color Settings",
+    initialOpen: true,
+    colorSettings: [{
+      label: 'Heading Color',
+      value: attributes.color,
+      onChange: newValue => setAttributes({
+        headingColor: newValue
+      })
+    }, {
+      label: 'Heading Background',
+      value: attributes.headingBackground,
+      onChange: newValue => setAttributes({
+        headingBackground: newValue
+      })
+    }]
   })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.userText)));
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
+    style: {
+      color: attributes.headingColor,
+      background: attributes.headingBackground
+    }
+  }, "Heading"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.userText)));
 }
 
 /***/ }),
@@ -127,9 +154,15 @@ function save(props) {
   const {
     attributes
   } = props;
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save()
-  }, attributes.userText);
+  const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save();
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...blockProps
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
+    style: {
+      color: attributes.headingColor,
+      background: attributes.headingBackground
+    }
+  }, "Heading"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, attributes.userText));
 }
 
 /***/ }),
@@ -214,7 +247,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/lwn-first-block","version":"0.1.0","title":"Lwn First Block","category":"widgets","icon":"database","description":"Just a simple block","attributes":{"userText":{"type":"string","default":"Hello from my block"}},"example":{},"supports":{"html":false,"color":{"background":true,"color":true,"link":true}},"textdomain":"lwn-first-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/lwn-first-block","version":"0.1.0","title":"Lwn First Block","category":"widgets","icon":"database","description":"Just a simple block","attributes":{"userText":{"type":"string","default":"Hello from my block"},"headingColor":{"type":"string","default":"#fff"},"headingBackground":{"type":"string","default":"#333"}},"example":{},"supports":{"html":false,"color":{"background":true,"color":true,"link":true}},"textdomain":"lwn-first-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
