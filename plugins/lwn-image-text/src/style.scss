@@ -1,0 +1,13 @@
+.wp-block-lwn-blocks-lwn-image-text {
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	flex-wrap: wrap;
+
+	img {
+		max-width: 100%;
+		object-fit: cover;
+		height: 300px;
+	}
+}

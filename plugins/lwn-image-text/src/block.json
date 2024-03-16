@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lwn-blocks/lwn-image-text",
+	"version": "0.1.0",
+	"title": "Lwn Image Text",
+	"category": "widgets",
+	"icon": "align-pull-right",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": true
+	},
+	"attributes": {
+		"image": {
+			"type": "object"
+		},
+		"content": {
+			"type": "string",
+			"default": "add your content"
+		},
+		"tagName": {
+			"type": "string",
+			"default": "p"
+		}
+	},
+	"textdomain": "lwn-image-text",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
