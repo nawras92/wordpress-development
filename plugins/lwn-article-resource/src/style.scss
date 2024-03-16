@@ -1,0 +1,16 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-lwn-blocks-lwn-article-resource {
+	& .text-decoration-underline {
+		text-decoration: underline;
+	}
+
+	& .text-decoration-none {
+		text-decoration: none;
+	}
+}

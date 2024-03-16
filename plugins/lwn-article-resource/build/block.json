@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "lwn-blocks/lwn-article-resource",
+  "version": "0.1.0",
+  "title": "Lwn Article Resource",
+  "category": "widgets",
+  "icon": "open-folder",
+  "description": "A block for article resources",
+  "attributes": {
+    "resourceTitle": {
+      "type": "string",
+      "default": "Resource Title"
+    },
+    "resourceUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "isTextUnderlined": {
+      "type": "boolean",
+      "default": false
+    },
+    "resourceRadius": {
+      "type": "number",
+      "default": "10"
+    },
+    "resourcePadding": {
+      "type": "number",
+      "default": "10"
+    }
+  },
+  "example": {},
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true,
+      "link": true
+    }
+  },
+  "textdomain": "lwn-article-resource",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
