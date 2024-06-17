@@ -1,0 +1,61 @@
+<!-- wp:template-part {"slug":"header","theme":"my-new-theme","area":"header"} /-->
+
+This is category template
+<!-- wp:group {"metadata":{"name":"Main Container"},"style":{"color":{"background":"#ff63473b"},"spacing":{"padding":{"top":"20px","bottom":"20px"}}},"layout":{"type":"default"}} -->
+<div
+  class="wp-block-group has-background"
+  style="background-color: #ff63473b; padding-top: 20px; padding-bottom: 20px"
+>
+  <!-- wp:group {"metadata":{"name":"Main Container Inner"},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group">
+    <!-- wp:query-title {"type":"archive"} /-->
+
+    <!-- wp:query {"queryId":3,"query":{"perPage":10,"pages":0,"offset":0,"postType":"page","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"parents":[]}} -->
+    <div class="wp-block-query">
+      <!-- wp:post-template {"style":{"spacing":{"blockGap":"40px"}},"layout":{"type":"grid","columnCount":2}} -->
+      <!-- wp:group {"style":{"spacing":{"padding":{"top":"16px","bottom":"16px","left":"16px","right":"16px"}}},"layout":{"type":"constrained"}} -->
+      <div
+        class="wp-block-group"
+        style="
+          padding-top: 16px;
+          padding-right: 16px;
+          padding-bottom: 16px;
+          padding-left: 16px;
+        "
+      >
+        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","width":"","height":"","style":{"border":{"radius":"10px"}}} /-->
+
+        <!-- wp:post-date {"style":{"color":{"text":"#a99b9b"},"elements":{"link":{"color":{"text":"#a99b9b"}}}}} /-->
+
+        <!-- wp:post-title {"level":3,"isLink":true,"style":{"color":{"text":"#467049"},"elements":{"link":{"color":{"text":"#467049"},":hover":{"color":{"text":"#4670494f"}}}}}} /-->
+
+        <!-- wp:post-terms {"term":"category","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /-->
+
+        <!-- wp:post-terms {"term":"post_tag","style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary"} /-->
+
+        <!-- wp:post-excerpt {"excerptLength":30} /-->
+      </div>
+      <!-- /wp:group -->
+      <!-- /wp:post-template -->
+
+      <!-- wp:query-pagination {"style":{"elements":{"link":{"color":{"text":"#ffffff"}}},"color":{"background":"#4b5d41","text":"#ffffff"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+      <!-- wp:query-pagination-previous /-->
+
+      <!-- wp:query-pagination-numbers /-->
+
+      <!-- wp:query-pagination-next /-->
+      <!-- /wp:query-pagination -->
+
+      <!-- wp:query-no-results -->
+      <!-- wp:paragraph {"placeholder":"أضف نصوصًا أو مكوّنات من شأنها أن تظهر عندما لا يُرجع الاستعلام أي نتائج."} -->
+      <p>المعذرة لا توجد نتائج موافقة لطلبك</p>
+      <!-- /wp:paragraph -->
+      <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
+  </div>
+  <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"my-new-theme","area":"footer"} /-->

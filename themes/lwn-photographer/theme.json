@@ -1,0 +1,80 @@
+{
+  "version": 2,
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    }
+  ],
+  "settings": {
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1320px"
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "blockGap": true
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "position": {
+      "sticky": true
+    },
+    "color": {
+      "link": true,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "customGradient": false,
+      "palette": [
+        {
+          "name": "Base",
+          "slug": "base",
+          "color": "#181818"
+        },
+        {
+          "name": "Contrast",
+          "slug": "contrast",
+          "color": "#ffc700"
+        },
+        {
+          "name": "Success",
+          "slug": "success",
+          "color": "#53a36b"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "lineHeight": true,
+      "fontWeight": true,
+      "fontStyle": false,
+      "textTransform": false,
+      "letterSpacing": false,
+      "dropCap": false,
+      "textDecoration": false
+    }
+  },
+  "styles": {
+    "blocks": {
+      "core/site-title": {
+        "css": "& a {text-decoration:none;}"
+      },
+      "core/social-link": {
+        "css": "border-radius: 4px; &:hover{background-color: transparent !important;}"
+      },
+      "core/navigation-link": {
+        "css": "& .wp-block-navigation-item__content{padding-bottom: 2px; transition: all 0.5s ease-in;}& .wp-block-navigation-item__content:hover{border-bottom: 2px solid  var(--wp--preset--color--contrast);} &.current-menu-item > .wp-block-navigation-item__content{border-bottom:2px solid  var(--wp--preset--color--contrast);}"
+      }
+    }
+  }
+}

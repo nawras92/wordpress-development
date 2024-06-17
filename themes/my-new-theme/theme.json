@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "sidebar",
+      "title": "Custom Sidebar",
+      "area": "uncategorized"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "nawras-template",
+      "title": "Nawras Template Title",
+      "postTypes": ["page"]
+    }
+  ],
+  "settings": {
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1000px"
+    },
+    "border": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "blockGap": true
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "position": {
+      "sticky": true
+    },
+    "color": {
+      "link": true,
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "customGradient": false,
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#777862"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#844a57"
+        },
+        {
+          "name": "Success",
+          "slug": "success",
+          "color": "#53a36b"
+        },
+        {
+          "name": "Success Lighter",
+          "slug": "success-lighter",
+          "color": "#99b98e"
+        },
+        {
+          "name": "Color Light",
+          "slug": "color-light",
+          "color": "#d7cfb2"
+        }
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "lineHeight": true,
+      "fontWeight": true,
+      "fontStyle": false,
+      "textTransform": false,
+      "letterSpacing": false,
+      "dropCap": false,
+      "textDecoration": false,
+      "fontSizes": [
+        {
+          "name": "Very Small",
+          "slug": "very-small",
+          "size": "10px"
+        },
+        {
+          "name": "Small",
+          "slug": "small",
+          "size": "20px"
+        },
+        {
+          "name": "Medium",
+          "slug": "medium",
+          "size": "30px"
+        },
+        {
+          "name": "Large",
+          "slug": "large",
+          "size": "40px"
+        },
+        {
+          "name": "Very Large",
+          "slug": "very-large",
+          "size": "60px"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "spacing": {
+      "margin": "0px",
+      "padding": "0px"
+    },
+    "elements": {},
+    "blocks": {
+      "core/site-title": {
+        "css": "& a{text-decoration: none}"
+      },
+      "core/group": {
+        "spacing": {
+          "padding": "0px",
+          "margin": "0px"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version": "2",
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "700px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "spacingSizes": [
+        {
+          "name": "1",
+          "size": "8px",
+          "slug": "8"
+        },
+        {
+          "name": "2",
+          "size": "16px",
+          "slug": "16"
+        },
+        {
+          "name": "3",
+          "size": "24px",
+          "slug": "24"
+        }
+      ],
+      "units": ["%", "px", "rem"]
+    }
+  },
+  "styles": {
+    "blocks": {
+      "core/heading": {
+        "color": {
+          "text": "#333"
+        }
+      },
+      "core/categories": {
+        "css": "&{list-style-type: none} & > li.cat-item a {color: #333; text-decoration:none;} & > li.cat-item a:hover { cursor:pointer; color: green; }  & > li.current-cat a {color:green;}"
+      }
+    }
+  }
+}
