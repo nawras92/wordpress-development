@@ -12,7 +12,7 @@
 <div class="wp-block-group">
 
 <!-- wp:cover {"dimRatio":70,"overlayColor":"base","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-base-background-color has-background-dim-70 has-background-dim"></span>><div class="wp-block-cover__inner-container"><!-- wp:group {"metadata":{"name":"Hero Content"},"style":{"spacing":{"blockGap":"45px"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-base-background-color has-background-dim-70 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"metadata":{"name":"Hero Content"},"style":{"spacing":{"blockGap":"45px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","style":{"color":{"text":"#ffffff"},"elements":{"link":{"color":{"text":"#ffffff"}}}},"fontSize":"large"} -->
 <h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size" style="color:#ffffff">أهلا بك في موقعي</h2>
 <!-- /wp:heading -->
