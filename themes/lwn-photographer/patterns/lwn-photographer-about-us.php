@@ -16,9 +16,10 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"metadata":{"name":"content"},"style":{"color":{"background":"#ffffff8c"},"spacing":{"padding":{"top":"60px","bottom":"60px","left":"80px","right":"80px"}}},"className":"lwn-photographer-front-page-about-us-content","layout":{"type":"constrained"}} -->
-<div class="wp-block-group lwn-photographer-front-page-about-us-content has-background" style="background-color:#ffffff8c;padding-top:60px;padding-right:80px;padding-bottom:60px;padding-left:80px"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast"} -->
-<h2 class="wp-block-heading has-contrast-color has-text-color has-link-color">______________ حول الموقع</h2>
+<div class="wp-block-column">
+<!-- wp:group {"metadata":{"name":"content"},"style":{"color":{"background":"#ffffff8c"},"spacing":{"padding":{"top":"60px","bottom":"60px","left":"80px","right":"80px"},"blockGap":"16px"}},"className":"lwn-photographer-front-page-about-us-content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group lwn-photographer-front-page-about-us-content has-background" style="background-color:#ffffff8c;padding-top:60px;padding-right:80px;padding-bottom:60px;padding-left:80px"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast","className":"is-style-lwn-photographer-heading"} -->
+<h2 class="wp-block-heading is-style-lwn-photographer-heading has-contrast-color has-text-color has-link-color"> حول الموقع</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontSize":"large"} -->
@@ -48,8 +49,13 @@
 <div class="wp-block-button is-style-lwn-photographer-button"><a class="wp-block-button__link has-base-color has-contrast-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:0px">تواصل معي</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:column -->
+
+
+</div>
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
