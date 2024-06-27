@@ -19,6 +19,56 @@ function lwn_photographer_regster_block_styles_callback()
 			}
 		',
   ]);
+  register_block_style('core/list', [
+    'name' => 'lwn-photographer-table-list',
+    'label' => 'Theme List',
+    'inline_style' => '
+			 ul.is-style-lwn-photographer-table-list{
+           list-style: none ;
+           display: flex;
+           flex-direction: column;
+           gap: 4px;
+           justify-content: center;
+           align-items: center;
+           padding-inline-start: 0;
+			}
+			 ul.is-style-lwn-photographer-table-list > li{
+          border-bottom: 1px solid #f5f5f5;
+          padding: 8px  15px;
+          width:100%;
+          text-align: center;
+			}
+		',
+  ]);
+  register_block_style('core/image', [
+    'name' => 'lwn-photographer-image-mirrored',
+    'label' => 'Image Mirrored',
+    'inline_style' => '
+			 .wp-block-image.is-style-lwn-photographer-image-mirrored > img{
+            transform: scaleX(-1)
+			}
+		',
+  ]);
+  register_block_style('core/column', [
+    'name' => 'lwn-photographer-column-moved',
+    'label' => 'Column to right',
+    'inline_style' => '
+			 .wp-block-column.is-style-lwn-photographer-column-moved{
+               margin-inline-start: -60px;
+               margin-inline-end: 60px;
+               z-index: 99;
+			}
+      @media screen and (max-width:787px){
+			 .wp-block-column.is-style-lwn-photographer-column-moved{
+               margin-inline-start: auto;
+               margin-inline-end: auto;
+               margin-block-start: -20px;
+               z-index: 99;
+			}
+
+      }
+		',
+  ]);
   register_block_style('core/heading', [
     'name' => 'lwn-photographer-heading',
     'label' => 'Theme heading',
@@ -44,21 +94,21 @@ function lwn_photographer_regster_block_styles_callback()
 			}
 		',
   ]);
-  register_block_style('core/column', [
-    'name' => 'lwn-photographer-about-us-content-column',
-    'label' => 'Theme Content Column',
-    'inline_style' => '
-			 .wp-block-column.is-style-lwn-photographer-about-us-content-column{
-           transition: all 1s ease-in;
-			}
-      @media screen and (max-width: 786px){
-			 .wp-block-column.is-style-lwn-photographer-about-us-content-column{
-           margin-top:-100px;
-           opacity: 0.95;
-      }
-    }
-		',
-  ]);
+  /* register_block_style('core/column', [ */
+  /*   'name' => 'lwn-photographer-about-us-content-column', */
+  /*   'label' => 'Theme Content Column', */
+  /*   'inline_style' => ' */
+  /* .wp-block-column.is-style-lwn-photographer-about-us-content-column{ */
+  /*          transition: all 1s ease-in; */
+  /* } */
+  /*     @media screen and (max-width: 786px){ */
+  /* .wp-block-column.is-style-lwn-photographer-about-us-content-column{ */
+  /*          margin-top:-100px; */
+  /*          opacity: 0.95; */
+  /*     } */
+  /*   } */
+  /* ', */
+  /* ]); */
   register_block_style('core/group', [
     'name' => 'lwn-photographer-about-us-content',
     'label' => 'Theme Content',
