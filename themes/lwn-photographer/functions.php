@@ -82,6 +82,19 @@ function lwn_photographer_regster_block_styles_callback()
 			}
 		',
   ]);
+  register_block_style('core/heading', [
+    'name' => 'lwn-photographer-heading-white',
+    'label' => 'Theme heading White',
+    'inline_style' => '
+			 .wp-block-heading.is-style-lwn-photographer-heading-white::before {
+          content: "";
+          background: white !important;
+          width: 95px;
+          height: 1px;
+          display: inline-block;
+			}
+		',
+  ]);
   register_block_style('core/image', [
     'name' => 'lwn-photographer-image',
     'label' => 'Theme Image',
